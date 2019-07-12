@@ -8,6 +8,6 @@ Select a text layer.
 
 Select `Plugins` > `Text Box Auto-Size` > `Set size` or press  `⌘`+ `Shift`+`F`
 
-**To automatically set the tetx box size when the text changes, enable the auto-size mode:**
+**To automatically set the text box size when the text changes, enable the auto-size mode:**
 
-Select  `Plugins` > `Text Box Auto-Size` > `Toggle auto-size` or press  `⌘`+`ctrl`+`Shift`+`F`
+Select `Plugins` > `Text Box Auto-Size` > `Toggle auto-size` or press  `⌘`+`ctrl`+`Shift`+`F`
