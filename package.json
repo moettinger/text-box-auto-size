@@ -1,0 +1,30 @@
+{
+  "name": "text-box-auto-size",
+  "version": "1.0",
+  "description": "This Sketch plugin auto-resizes the bounding box of a text layer. Height is calculated by multiplying the number of lines by the text's respective line-height. The text is then centered vertically inside the bounding box. Any extra space at the end of the text is also trimmed.",
+  "engines": {
+    "sketch": ">=3.0"
+  },
+  "skpm": {
+    "name": "Text Box Auto-Size",
+    "manifest": "src/manifest.json",
+    "main": "text-box-auto-sizse.sketchplugin",
+    "assets": [
+      "assets/**/*"
+    ]
+  },
+  "scripts": {
+    "build": "skpm-build",
+    "watch": "skpm-build --watch",
+    "start": "skpm-build --watch --run",
+    "postinstall": "npm run build && skpm-link"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/moettinger/text-box-auto-size.git"
+  },
+  "devDependencies": {
+    "@skpm/builder": "^0.4.0"
+  },
+  "author": "Matt Oettinger <oettingerdev@gmail.com>"
+}

@@ -1,0 +1,44 @@
+{
+  "compatibleVersion": 3,
+  "bundleVersion": 1,
+  "commands": [
+    {
+      "script": "main.js",
+      "handler": "setSize",
+      "shortcut": "command shift f",
+      "name": "Set size",
+      "identifier": "tfc.setSize"
+    },
+    {
+      "script": "main.js",
+      "handler": "toggleAutoResizing",
+      "name": "Toggle auto-size",
+      "shortcut": "command ctrl shift f",
+      "identifier": "tfc.toggleAutoResizing"
+    },
+    {
+      "script": "main.js",
+      "handlers": {
+        "actions": {
+          "TextChanged.finish": "onTextChanged",
+          "HandlerLostFocus": "onHandlerLostFocus"
+        }
+      },
+      "name": "Auto resize",
+      "identifier": "tfc.autoResize"
+    }
+  ],
+  "menu": {
+    "title": "Text Box Auto-Size",
+    "items": [
+      "tfc.setSize",
+      "-",
+      "tfc.toggleAutoResizing"
+    ]
+  },
+  "version": "1.0",
+  "description": "This plugin auto-resizes the bounding box of a text layer. Height is calculated by multipling the number of lines by the text's respective line-height. The text is then centred vertically inside the bounding box.",
+  "name": "Text Box Auto-Size",
+  "author": "Matt Oettinger",
+  "authorEmail": "oettingerdev@gmail.com"
+}
